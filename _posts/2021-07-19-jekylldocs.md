@@ -1,60 +1,19 @@
 ---
 layout: post
-title: "Jekdocs"
-date: 2021-07-19
+title: "Introduction to gdb and ddd"
+date: 2020-07-19
 ---
 
-# Step by Step Tutorial
+###Introduction to gdb and ddd
+The purpose of a debugger is to allow you to see what is going on inside your C program while it runs. In addition, you can use gdb to see what your program was doing at the moment it crashed.
+Here are some of the usful actions that gdb can perform:
 
-## 1\. Setup
+Start your program and step through it line by line
+Make your program stop on specified conditions
+Show the values of variables used by your program
+Examine the contents of any frame on the call stack
+Set breakpoints that will stop your program when it reaches a certain point. Then you can step through part of the execution using step and next, and type continue to resume regular execution.
+For C and C++ programs, gdb and ddd are debuggers that you can use. ddd is a easy-to-use GUI wrapper around an inferior debugger (gdb for GNU compiled C or C++ code). ddd allows you to interact with the debugger by using either GUI menu options or the under-lying debugger's command line interface. In addition, ddd automatically displays source code when breakpoints are reached.
 
-Welcome to Jekyll's step-by-step tutorial. This tutorial takes you from having some front-end web development experience to building your first Jekyll site from scratch without relying on the default gem-based theme.
+There are some example programs and some documentation on using gdb to debug them that you can copy from here: /home/newhall/public/gdb_examples/
 
-## Installation[Permalink](https://jekyllrb.com/docs/step-by-step/01-setup/#installation)
-
-Jekyll is a Ruby gem. First, install Ruby on your machine. Go to [Installation](https://jekyllrb.com/docs/installation/)and follow the instructions for your operating system.
-
-With Ruby installed, install Jekyll from the terminal:
-
-    gem install jekyll bundler 
-
-Create a new `Gemfile` to list your project's dependencies:
-
-    bundle init 
-
-Edit the `Gemfile` in a text editor and add jekyll as a dependency:
-
-    gem "jekyll" 
-
-Run `bundle` to install jekyll for your project.
-
-You can now prefix all jekyll commands listed in this tutorial with `bundle exec` to make sure you use the jekyll version defined in your `Gemfile`.
-
-## Create a site[Permalink](https://jekyllrb.com/docs/step-by-step/01-setup/#create-a-site)
-
-It's time to create a site! Create a new directory for your site and name it whatever you want. Through the rest of this tutorial we'll refer to this directory as root.
-
-You can also initialize a Git repository here.
-
-One of the great things about Jekyll is there's no database. All content and site structure are files that a Git repository can version. Using a repository is optional but is recommended. You can learn more about using Git by reading the [Git Handbook](https://guides.github.com/introduction/git-handbook/).
-
-Let's add your first file. Create `index.html` in root with the following content:
-
-    <!DOCTYPE html> <html> <head> <meta charset="utf-8"> <title>Home</title> </head> <body> <h1>Hello World!</h1> </body> </html> 
-
-## Build[Permalink](https://jekyllrb.com/docs/step-by-step/01-setup/#build)
-
-Since Jekyll is a static site generator, it has to build the site before we can view it. Run either of the following commands to build your site:
-
-* `jekyll build` - Builds the site and outputs a static site to a directory called `_site`.
-* `jekyll serve` - Does `jekyll build` and runs it on a local web server at `http://localhost:4000`, rebuilding the site any time you make a change.
-
-When you're developing a site, use `jekyll serve`. To force the browser to refresh with every change, use `jekyll serve --livereload`.
-
-Run `jekyll serve` and go to [http://localhost:4000](http://localhost:4000/) in your browser. You should see "Hello World!".
-
-At this point, you might be thinking, "So what?". The only thing that happened was that Jekyll copied an HTML file from one place to another.
-
-Patience, young grasshopper, there's still much to learn!
-
-Next. you'll learn about Liquid and templating.
