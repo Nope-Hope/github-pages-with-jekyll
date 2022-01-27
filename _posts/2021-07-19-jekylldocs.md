@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introduction to gdb and ddd"
-date: 2020-07-19
+date: 2021-07-19
 ---
 
 ###Introduction to gdb and ddd
