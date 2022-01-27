@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introduction to gdb and ddd"
+title: "Modern C++"
 date: 2020-09-27
 ---
 
