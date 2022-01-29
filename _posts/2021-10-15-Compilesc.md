@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Compile Source Code"
-date: 2020-10-15
+date: 2021-10-15
 ---
 
-###Compile Source Code
+### Compile Source Code
 Often times you will encounter an obscure package that only comes in the form of pure source code. You'll need to use a few commands to get that source code package compiled and installed on your system.
 
 First thing is first, you'll need to have software to install the tools that will allow you to compile source code.
